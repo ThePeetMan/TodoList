@@ -1,12 +1,10 @@
 "use client";
 
-import TEST from "@/app/components/xdonutjungx"
-import TEST2 from "./components/test";
+import TodoList from "./components/todolist";
 export default function Home() {
   return (
     <main>
-      <TEST/>
-      <TEST2/>
+      <TodoList/>
     </main>
   );
 }
