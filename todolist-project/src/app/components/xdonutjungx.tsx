@@ -1,12 +1,15 @@
 "use client";
 
-import styles from "../../src/app/style/test_example.module.css";
+import Image from "next/image";
+
+import styles from "../../../src/app/style/business_card_cpf.module.css";
+
 
 export default function Home() {
   return (
     <main className={styles.firstname}>
       <p>
-        ThePeetMan XXX
+        XdonutjungX@gmail.com
       </p>
     </main>
   );
