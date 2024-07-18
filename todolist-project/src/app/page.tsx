@@ -1,12 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
 
+import TEST from "@/app/components/xdonutjungx"
+import TEST2 from "./components/test";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <p>
-        ThePeetMan
-      </p>
+    <main>
+      <TEST/>
+      <TEST2/>
     </main>
   );
 }

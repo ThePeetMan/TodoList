@@ -1,0 +1,35 @@
+.logo_card {
+    position: absolute;
+    top: 20px;
+    right: calc(100% - 95%);
+}
+.full_infomation {
+    position: relative;
+    top: 250px;
+    left: calc(100% - 80%);
+    width: 70%;
+}
+.firstname {
+    font-size: 10rem;
+    font-weight: 800;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 250px;
+}
+.lastname {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.information_name {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+    word-wrap: break-word;
+}
+.card_detail_info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+}
