@@ -1,13 +1,12 @@
 "use client";
 
-import styles from "../../src/app/style/test_example.module.css";
-
+import TEST from "@/app/components/xdonutjungx"
+import TEST2 from "./components/test";
 export default function Home() {
   return (
-    <main className={styles.firstname}>
-      <p>
-        ThePeetMan XXX
-      </p>
+    <main>
+      <TEST/>
+      <TEST2/>
     </main>
   );
 }

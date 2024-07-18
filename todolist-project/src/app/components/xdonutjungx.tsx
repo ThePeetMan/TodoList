@@ -1,16 +1,13 @@
 "use client";
+import { Button } from "antd";
 
-import Image from "next/image";
-
-import styles from "../../../src/app/style/business_card_cpf.module.css";
-
-
-export default function Home() {
+export default function TEST() {
   return (
-    <main className={styles.firstname}>
-      <p>
-        XdonutjungX@gmail.com
-      </p>
-    </main>
+    <>
+      <div style={{fontSize: "70px"}}>
+        XdonutjungX@gmail
+      </div>
+      <Button>Click for what</Button>
+    </>
   );
 }
