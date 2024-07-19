@@ -1,20 +1,13 @@
 "use client";
 
 import React from "react";
-import {
-  Divider,
-  List,
-  Typography,
-  Input,
-  Space,
-  Button,
-  Flex,
-  Tooltip,
-} from "antd";
+import { List, Typography, Input, Button, Flex, Tooltip } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { Yellowtail } from "next/font/google";
+import { usePathname } from "next/navigation";
 
 export default function TodoList() {
+  const pathname = usePathname();
+
   const data = [
     "Racing car sprays burning fuel into crowd.",
     "Japanese princess to wed commoner.",
@@ -60,10 +53,16 @@ export default function TodoList() {
                 <Typography.Text mark>[ITEM]</Typography.Text> {item}
               </div>
               <Flex gap="small">
-                <Button style={{ background: "#FFBF00" }}>Edit</Button>
-                <Button type="primary" danger>
-                  Delete
-                </Button>
+                {pathname === "/todolist/edit" ? (
+                  <Button style={{ background: "#FFBF00" }}>Edit</Button>
+                ) : (
+                  <>
+                    <Button style={{ background: "#FFBF00" }}>Edit</Button>
+                    <Button type="primary" danger>
+                      Delete
+                    </Button>
+                  </>
+                )}
               </Flex>
             </div>
           </List.Item>

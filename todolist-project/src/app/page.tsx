@@ -1,10 +1,10 @@
-"use client";
+import Link from "next/link";
 
-import TodoList from "./components/todolist";
 export default function Home() {
   return (
     <main>
-      <TodoList/>
+      <h1>Welcome To ToDoList</h1>
+      <Link href="/todolist">ToDoList page</Link>
     </main>
   );
 }
