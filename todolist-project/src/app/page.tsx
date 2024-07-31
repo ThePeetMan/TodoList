@@ -3,8 +3,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <h1>Welcome To ToDoList</h1>
-      <Link href="/todolist">ToDoList page</Link>
+      <Link href="/todolist" style={{ background: "salmon" }}>
+        ToDoList page
+      </Link>
     </main>
   );
 }
