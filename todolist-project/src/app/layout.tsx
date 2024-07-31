@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 export const metadata: Metadata = {
   title: "Todo-list App",
@@ -14,11 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div>Header</div>
-        <main>{children}</main>
-        <div>Footer</div>
-      </body>
+      <UserProvider>
+        <body>{children}</body>
+      </UserProvider>
     </html>
   );
 }
